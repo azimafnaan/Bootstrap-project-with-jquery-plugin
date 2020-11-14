@@ -1,0 +1,773 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+.clear{
+    overflow: hidden;
+}
+a{
+     text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+ul,ol{
+   
+    list-style-type: none;
+}
+img{
+    border: 0;
+}
+/*Menu Part Css Start*/
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 13px;
+    position: relative;
+}
+.navbar-light .navbar-nav .nav-link:after{
+    position: absolute;
+    content: '';
+    width: 80%;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #00e0d0;
+    bottom: 0;
+    opacity: 0;
+        
+}
+
+.navbar-light .navbar-nav .nav-link:hover:after{
+    opacity: 1;
+}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link.active{
+    color: #00e0d0;
+}
+.navbar-light .navbar-nav .nav-link.active:after{
+    opacity: 1;
+}
+.nav_bg{
+    background: #444;
+}
+.navbar{
+    transition: all 2s ease;
+}
+/*Menu Part Css End*/
+
+/*Banner Part CSS Start*/
+#banner_part{
+/*    background: url(../image/banner_img.png);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+   
+}
+#banner_part:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(63, 48, 101,0.6);
+   
+}
+.banner-slider{
+    z-index: 99;
+}
+.banner_text{
+    position: relative;
+    z-index: 99;
+    padding-top: 225px;
+    padding-bottom: 205px;
+}
+.banner_text h2{
+ font-family: 'Playfair Display'black, serif; 
+    font-weight: bold;
+    color: white;
+    font-size: 32px;
+    position: relative;
+}
+.banner_text h2:after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 2px;
+    left: 50%;
+    background: #00e0d0;
+    transform: translateX(-50%);
+    bottom:-30px;
+}
+.banner_text p{
+    color: white;
+    font-size: 14px;
+    font-family: 'Roboto', light;
+    padding: 55px 108px 55px 108px;
+    line-height: 25px;
+    padding-top: 55px;
+}
+.banner_text a{
+    border: 1px solid #00e0d0;
+    padding: 10px 35px;
+    color: #00e0d0;
+   font-family: 'Playfair Display'; 
+    font-weight: 700;
+    font-size: 20px;
+    
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 500;
+}
+.slick-dots{
+    list-style-type: none;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.slick-dots li{
+    display: inline-block;
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    line-height: 10px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.slick-dots li button{
+    color:transparent;
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    background:#00e0d0;
+    border: none;
+    border-radius: 50%;
+    opacity: 0;
+}
+.slick-dots li.slick-active button{
+    opacity: 1;
+}
+/*Banner Part CSS End*/
+
+/*about part css start*/
+#about_part{
+    padding: 70px 0px;
+}
+.about_img{
+    
+}
+.about_img img{
+    
+}
+.about_text{}
+.about_text h2{
+     color: #413d4b;
+   font-family: 'Playfair Display'; 
+    font-weight: 700;
+    font-size: 22px;
+    padding-bottom: 30px;
+    margin-bottom: 0px !important;
+}
+.about_text p{
+    color: #413d4b;
+    font-size: 14px;
+    font-family: 'Roboto', light;
+   padding-bottom: 30px;
+    margin-bottom: 0px !important;
+}
+.about_text a{
+    border: 1px solid #00e0d0;
+    padding: 10px 35px;
+    color: #00e0d0;
+   font-family: 'Playfair Display'black, serif; 
+    font-weight: 700;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 10px;
+    
+}
+/*about part css End*/
+
+
+/*video Part Css Start*/
+
+#video_part{
+  background: url(/image/video_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 200px 0px;
+}
+#video_part:after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(36, 30, 69,0.7);
+    
+}
+.video_icon{
+    position: relative;
+    z-index: 100;
+}
+.video_i{
+    color: white;
+    font-size: 45px;
+    width: 90px;
+    height: 90px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 90px;
+    cursor: pointer;
+   
+}
+.video_icon h3{
+   color: white;
+    font-size: 16px;
+    font-family: 'Roboto', black;
+    font-weight: 700;
+    padding-top: 32px;
+}
+
+/*video Part Css End*/
+/*service Part Code Start*/
+
+#service_part{
+    padding: 70px 0px 70px 0px;
+}
+.service_head{}
+.service_head h2{
+     color: #413d4b;
+   font-family: 'Playfair Display'; 
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 45px;
+}
+.service_head p{
+    color: #2f2d35;
+   font-family: 'Playfair Display'; 
+    font-weight: normal;
+    font-size: 14px;
+    position: relative;
+}
+.service_head p:after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #c6c4c9;
+    height: 2px;
+    top: 40px;
+    
+}
+/*service Part Code End*/
+.service_text{
+    padding-top: 80px;
+}
+.service_text img{
+    padding-bottom: 35px;
+}
+.service_text h4{
+    color: #413d4b;
+    font-size: 14px;
+    font-family: 'Roboto', black;
+    font-weight: 700;
+    padding-bottom: 20px;
+    margin-bottom: 0px !important;
+}
+.service_text p{
+     color: #333333;
+    font-size: 14px;
+    font-family: 'Roboto', light;
+    font-weight:normal;
+    padding: 0px 50px;
+    line-height: 22px;
+}
+ 
+/*Team Part Css Start*/
+
+#Team{
+    background: url(../image/team_pic.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 70px 0px;
+    position: relative;    
+}
+#Team:after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(41, 36, 70,0.7);
+}
+.team_text_top{
+    position: relative;
+    z-index: 99;
+    color: #fff;
+    text-align: center;
+/*    margin-left: 50%;*/
+}
+.team_text_top h3{
+    color: #ffffff;
+    font-family: 'Playfair Display'; 
+    font-weight: bold;
+    font-size: 22px;
+}
+.team_text_top p{
+    color: #ffffff;
+    font-family: 'Playfair Display'; 
+    font-weight: normal;
+    font-size: 14px;
+    position: relative;
+    padding-bottom: 70px;
+}
+.team_text_top p:after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 2px;
+    background: #655b80;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.team_member{
+    position: relative;
+    z-index: 100;
+    text-align: center;
+    color: white;
+}
+.team-card{
+    background-color: transparent;
+    border: 1px solid #79768d;
+}
+
+.card_text{
+    
+}
+.card_text h5{
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Roboto', black;
+    font-weight: 900;
+    
+}
+.card_text p{
+     color: #fafafa;
+    font-size: 14px;
+    font-family: 'Roboto', light;
+    font-weight: 400;
+}
+.team_slider{
+    padding-bottom: 70px;
+    position: relative;
+    z-index: 100;
+}
+.team_text_bottom{
+    position: relative;
+    z-index: 100;
+    color: white;
+    text-align: center;
+}
+.team_text_bottom p{
+     color: #f3f3f3;
+    font-size: 14px;
+    font-family: 'Roboto', light;
+    font-weight: 400;
+    padding-bottom: 25px;
+}
+.team_text_bottom a{
+    border: 1px solid #00e0d0;
+    padding: 10px 30px;
+    color: #00e0d0;
+   font-family: 'Playfair Display'; 
+    font-weight: 700;
+    font-size: 20px;
+}
+.team_slider .slick-dots{
+    position: absolute;
+    top: 89%;
+} 
+/*Team Part Css End*/
+
+/*project part css start*/
+#project{
+    padding: 70px 0px;
+}
+.project_top_left{
+   padding-bottom: 70px;  
+}
+.project_top_left h3{
+     color: #413d4b;
+   font-family: 'Playfair Display'; 
+    font-weight: 700;
+    font-size: 22px;
+}
+.project_top_right{
+    padding-bottom: 70px;
+}
+.project_top_right p{
+    color: #413d4b;
+   font-family: 'Playfair Display'; 
+    font-weight: 400;
+    font-size: 14px;
+}
+.project_bottom{
+    padding-top: 70px;
+}
+.project_bottom a{
+    border: 1px solid #00e0d0;
+    padding: 10px 30px;
+    color: #00e0d0;
+   font-family: 'Playfair Display'; 
+    font-weight: 700;
+    font-size: 20px;
+}
+/*project part css End*/
+
+
+
+/*Team Two CSS Part Start*/
+#team_two{
+    background: url(/image/team_two_bg.png);
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+    padding: 70px 0px;
+    position: relative;
+   
+}
+#team_two:after{
+   position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:rgba(31, 22, 62,0.7);
+}
+.team_slider_text{
+    position:relative;
+    z-index: 99;
+    color: #fff;
+}
+.team_slider_text i{
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+.team_slider_text p{
+     color: #fff;
+   font-family: 'Playfair Display'; 
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0px 120px;
+    margin-bottom: 40px;
+}
+
+.team_slider_text h4{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Roboto', black;
+    font-weight: 700;
+}
+.team_slider_text h5{
+    color: #fff;
+    font-size: 13px;
+    font-family: 'Roboto', light;
+ 
+}
+.team_slider_img{
+    position: relative;
+    z-index: 99;
+}
+.team_slider_img img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.slide_img{
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 99;
+}
+.text_slide{
+    position: relative;
+    z-index: 99;
+}
+.team_arw_left {
+    position: absolute;
+    z-index: 99;
+    color: #fff;
+    bottom: 20%;
+    left: 30%;
+    font-size: 25px;
+    cursor: pointer;
+}
+.team_arw_right {
+    position: absolute;
+    z-index: 99;
+    color: #fff;
+    top: 75%;
+    left: 69%;
+    font-size: 25px;
+    cursor: pointer;
+}
+.slick-center> .team_slider_img img{
+    transform: rotate(360deg);
+    transition: all 1s ease;
+   border: 1px solid white;
+}
+/*Team Two CSS Part End*/
+
+/*Contact part Css Start*/
+#contact{
+    padding: 70px 0px;
+}
+.contact_left h3{
+      color: #413d4b;
+  font-family: 'Playfair Display', black; 
+    font-weight:bold;
+    font-size: 22px;
+    padding-bottom: 35px;
+}
+.contact_btn{
+   color: #00e0d0;
+    border-color: #00e0d0;
+    padding: 6px 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px; 
+}
+.contact_btn:hover {
+    color: #bcd5ee;
+    text-decoration: none;
+}
+.contact_right{}
+.contact_right h3{
+    margin-bottom: 45px;
+        color: #413d4b;
+  font-family: 'Playfair Display', black; 
+    font-weight:bold;
+    font-size: 22px;
+}
+.contact_img{
+    padding-bottom: 40px;
+}
+
+/*Contact part Css End*/
+
+/*footer part html start*/
+#footer{
+    background: url(/image/footer_bg.png);
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+    padding: 70px 0px;
+    position: relative;
+   
+}
+#footer:after{
+   position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:rgba(36, 24, 98,0.7);
+}
+.footer_bg_wrap{
+    position: relative;
+    z-index: 99;
+    color: white;
+}
+.footer_top_left{
+    
+}
+.footer_top_left img{
+    padding-bottom: 25px;
+}
+.footer_top_left p{
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Roboto', light;
+    font-weight: normal;
+    line-height: 25px;
+    padding: 0px 60px 0px 0px;
+}
+.footer_top_middle{
+    
+}
+.footer_top_middle h4, .footer_top_right h4{
+   color: #fff;
+    font-size: 15px;
+    font-family: 'Roboto', black;
+    font-weight: bold; 
+    padding-bottom: 38px;
+}
+.footer_top_middle p{
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Roboto', light;
+    line-height: 25px;
+    padding-right: 85px;
+}
+.fot_icon{
+    margin-right: 15px;
+    font-size: 20px;
+}
+.fot_icon1{
+    margin-right: 10px;
+    font-size: 20px;
+/*    background: #2d2552;*/
+/*    color: #fff;*/
+    background-color: transparent;
+    
+}
+.sent_input{
+    background-color: transparent;
+    border-radius: 0px;
+    padding: 21px 29px;
+}
+.sent_input:focus{
+    background-color: transparent;
+    color: white;
+}
+.sent_btn{
+    border: 1px solid #fff;
+    padding: 5px 30px;
+    background: rgba(157, 151, 177,0.5);
+    color: black;
+    font-size: 20px;
+    border-radius: 0px;
+    margin-bottom: 16px;
+    
+}
+.footer_top_right ul{
+    
+}
+.footer_top_right ul li{
+   float: left;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin-right: 0px;
+    line-height: 35px;
+    text-align: center;
+    margin-left: 12px;
+}
+.footer_top_right ul li a{
+    color: white;
+    
+}
+.footer_btm_wrap{
+    position: relative;
+    z-index: 99;
+    color: #fff;
+    margin-top: 60px;
+}
+.footer_bottom_left{
+    
+}
+.footer_bottom_left ul{
+    
+}
+.footer_bottom_left ul li {
+    float: left;
+    margin-right: 25px;
+}
+.footer_bottom_left ul li a {
+    color: white;
+    font-size: 14px;
+    font-family: 'Roboto', light;
+    font-weight: normal;
+}
+.footer_bottom_right {
+    color: white;
+    font-size: 14px;
+    font-family: 'Roboto';
+    font-weight: normal;
+}
+/*footer part html End*/
+
+/*Add custom cursor so it auto inherits font styles*/
+
+.typed::after {
+    content: '|';
+    display: inline;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+/*Removes cursor that comes with typed.js*/
+
+.typed-cursor {
+    opacity: 0;
+    display: none;
+}
+
+/*Custom cursor animation*/
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*particle js*/
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50%;
+    z-index: 10000;
+}
+
